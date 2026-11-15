@@ -30,7 +30,8 @@ Default help/self-test modes do not load OpenXR, connect CAPI, create graphics
 devices, launch SteamVR, register API layers, or change drivers/settings.
 Actual runtime/device commands always require explicit modes.
 
-First-party code is MIT. Third-party components retain their own terms. Toolkit
+First-party code is Apache-2.0; see [LICENSE](LICENSE), [NOTICE](NOTICE), and
+[licensing scope/history](docs/LICENSING.md). Third-party components retain their own terms. Toolkit
 has an MIT LICENSE **and** README statements concerning non-commercial use and
 eye-tracking data; both are recorded rather than silently resolved here.
 UnitySetup is an external tool, not copied into this repository. No Sony DLLs,

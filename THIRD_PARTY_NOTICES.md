@@ -2,7 +2,8 @@
 
 First-party integration, native test-host, processing and CPU-reproduction code
 was consolidated from earlier development experiments on 2026-11-15. It is
-covered by this repository's MIT license. Source migrations preserve behavior
+covered by this repository's Apache-2.0 license at this revision. Earlier
+MIT-licensed revisions remain in Git history; see docs/LICENSING.md. Source migrations preserve behavior
 unless portability/default-offline changes are explicitly documented.
 
 ## PSVR2Toolkit
@@ -40,6 +41,6 @@ interface names in the proposed patch refer to the upstream driver.
 
 Windows SDK, MSVC, FXC and .NET Framework are external build/runtime tools,
 not distributed SDK contents. Sony's original driver remains separately
-installed under its own terms; this repository's MIT license does not grant
+installed under its own terms; this repository's Apache-2.0 license does not grant
 rights to distribute it. No GPL or license compatibility claim is inferred for
 unreviewed alternative runtimes.

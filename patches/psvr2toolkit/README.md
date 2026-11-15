@@ -5,6 +5,9 @@ Upstream PSVR2Toolkit tag v1.0.0-experimental-3, commit
 [hmd_device_hooks.cpp](https://github.com/BnuuySolutions/PSVR2Toolkit/blob/9900be1edac6ea8fce03ea5224b5ccf8c6d7ea33/projects/psvr2_openvr_driver_ex/driver_hooks/hmd_device_hooks.cpp).
 Upstream MIT notice is included as UPSTREAM_LICENSE.txt; see root notices for
 the separate upstream README statements. Only a small patch/context is included.
+The patch file and UPSTREAM_LICENSE.txt remain MIT-licensed upstream material.
+The first-party CPU reproduction script is covered by the root Apache-2.0
+license; changing the root license does not relicense the upstream patch.
 
 The upstream source copies double fitted coefficients into a float[2][8]
 buffer with memcpy(sizeof(destination)), then advertises a double property.
