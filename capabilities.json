@@ -4,6 +4,7 @@
   "runtimeReady": null,
   "physicalHdrVerified": false,
   "capabilities": {
+    "steamVrPreparation": {"implementation": "implemented", "verification": "unit-tested", "normalPathRequiresNativeProbe": false, "coldNormalEntryVerified": false, "displayReadyVerified": false},
     "gazeSenseCapiBridge": {"implementation": "implemented", "verification": "offline-tested", "historicalIntegrationUserTested": true, "repositoryHardwareRetested": false},
     "eyeCalibration": {"implementation": "external-tool", "provider": "PSVR2Toolkit.UnitySetup", "repositoryHardwareRetested": false},
     "openxrProbe": {"implementation": "experimental", "verification": "offline-tested", "liveRuntimeQueriedInThisRepository": false},

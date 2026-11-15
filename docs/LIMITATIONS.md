@@ -1,6 +1,8 @@
 # Known limitations
 
-- No actual VR/runtime/GPU operation has been performed from this repository.
+- HDR/SDR modules have no live session/GPU verification. The new SteamVR
+  preparation adapter has a runtime-launch attempt, but display readiness failed;
+  this does not establish successful VR presentation or a display/driver fix.
 - Prior user-tested gaze/Sense behavior came from the original integration;
   the portable CAPI port still requires its own hardware regression test.
 - Toolkit CAPI is experimental/WIP; the bridge pins its two external DLL hashes.

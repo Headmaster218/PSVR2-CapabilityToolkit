@@ -38,6 +38,9 @@ different notices. Source commit and URL are in dependencies.lock.json.
 Valve OpenVR's [LICENSE](https://github.com/ValveSoftware/openvr/blob/master/LICENSE)
 is a three-clause BSD-style license. No full Valve SDK is vendored here;
 interface names in the proposed patch refer to the upstream driver.
+The optional readiness diagnostic also consumes official OpenVR headers from
+the pinned external source; normal SteamVR launching does not need that SDK or
+a native binary. The installed Steam/OpenVR DLLs are not redistributed.
 
 Windows SDK, MSVC, FXC and .NET Framework are external build/runtime tools,
 not distributed SDK contents. Sony's original driver remains separately

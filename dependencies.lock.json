@@ -18,5 +18,6 @@
     "version": "1.1.65",
     "commit": "a9f14c416e383d05c142f5a2539a91fe3931b52a"
   },
+  "openvrReadinessHeaders": {"repository": "https://github.com/ValveSoftware/openvr", "commit": "0924064316de3effbcd1acf1e309182a2deb1c05", "vendored": false},
   "build": {"architecture": "Windows-x64", "cppStandard": "C++17", "shaderModel": "5.0", "powershell": "5.1", "node": ">=18"}
 }

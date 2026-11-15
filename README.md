@@ -12,6 +12,7 @@ tracking implementation**. No device software is installed by these tools.
 | Module | Current evidence |
 |---|---|
 | Toolkit CAPI bridge | First-party bridge migrated from an existing integration; gaze, Sense haptics and triggers were previously user-tested there. This repository's port is offline-tested; hardware retest is pending. |
+| SteamVR launch handoff | Reuse existing server/monitor or request fixed Steam app launch. Singleflight and retry; no native readiness gate. Native probe remains optional diagnostics. Final normal-entry cold launch is not yet verified. |
 | Eye calibration | Use external Toolkit UnitySetup; no calibration writes implemented here. |
 | OpenXR extension probe | Static inspection and CPU ABI tests; live enumeration requires explicit opt-in and an already running SteamVR. |
 | Native HDR host | Windows x64 compile/CPU tests; explicit BT.2020/PQ capability negotiation and controlled stereo test-pattern code. No live HDR/output verification. |
