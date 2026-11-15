@@ -1,0 +1,12 @@
+diff --git a/projects/psvr2_openvr_driver_ex/driver_hooks/hmd_device_hooks.cpp b/projects/psvr2_openvr_driver_ex/driver_hooks/hmd_device_hooks.cpp
+--- a/projects/psvr2_openvr_driver_ex/driver_hooks/hmd_device_hooks.cpp
++++ b/projects/psvr2_openvr_driver_ex/driver_hooks/hmd_device_hooks.cpp
+@@ -180,7 +180,7 @@
+     vr::VRProperties()->SetProperty(ulPropertyContainer, vr::Prop_CameraDistortionFunction_Int32_Array, &cameraDistortionFunction,
+                                     sizeof(cameraDistortionFunction), vr::k_unInt32PropertyTag);
+ 
+-    float cameraDistortionCoeffs[2][vr::k_unMaxDistortionFunctionParameters];
++    double cameraDistortionCoeffs[2][vr::k_unMaxDistortionFunctionParameters];
+     memcpy(cameraDistortionCoeffs, pHmdDeviceCamera->fittedCoefficients, sizeof(cameraDistortionCoeffs));
+     vr::VRProperties()->SetProperty(ulPropertyContainer, vr::Prop_CameraDistortionCoefficients_Float_Array, cameraDistortionCoeffs,
+                                     sizeof(cameraDistortionCoeffs), vr::k_unDoublePropertyTag);
