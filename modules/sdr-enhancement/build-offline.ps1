@@ -13,5 +13,7 @@ Invoke-CheckedNative $CppCompiler @('/nologo',(Join-Path $build 'stereo_d3d11.ob
 Invoke-CheckedNative $exe @() (Join-Path $build 'cpu-contract.txt')
 $node=(Get-Command node.exe -ErrorAction Stop).Source
 Invoke-CheckedNative $node @((Join-Path $PSScriptRoot 'test_reference.cjs')) (Join-Path $build 'cpu-reference.json')
-Write-BuildRecord $build @($sources[0],$sources[1],(Join-Path $PSScriptRoot 'adapter\stereo_adapter.hpp'),$shader,$exe,$CppCompiler,$ShaderCompiler)
+$recordFiles=@($sources[0],$sources[1],(Join-Path $PSScriptRoot 'adapter\stereo_adapter.hpp'),(Join-Path $PSScriptRoot 'adapter\stereo_d3d11.hpp'),(Join-Path $PSScriptRoot 'stereo_reference.cjs'),(Join-Path $PSScriptRoot 'test_reference.cjs'),$PSCommandPath,(Join-Path $RepositoryRoot 'scripts\Common.ps1'),$shader,$exe,$CppCompiler,$ShaderCompiler,$node,(Join-Path $build 'stereo_expand.cs_5_0.cso'))
+if($DxcPath){$recordFiles+=@($DxcPath,(Join-Path $build 'stereo_expand.cs_6_0.dxil'))}
+Write-BuildRecord $build $recordFiles
 Write-Output $build
