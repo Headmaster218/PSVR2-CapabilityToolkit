@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "toolkit": {
+    "repository": "https://github.com/BnuuySolutions/PSVR2Toolkit",
+    "tag": "v1.0.0-experimental-3",
+    "commit": "9900be1edac6ea8fce03ea5224b5ccf8c6d7ea33",
+    "capiSha256": "25F1679F76B33F11C4F4A85C00B32C5D04815D9E7B349FA7718B700CA3882671",
+    "crossIpcSha256": "0ED1B00CCAD8C777005187F1569D7D9268C3813E57BF757FC9C85751DC302F5E",
+    "abi": "experimental-WIP"
+  },
+  "unitySetupExternalOnly": {
+    "repository": "https://github.com/BnuuySolutions/PSVR2Toolkit.UnitySetup",
+    "tag": "v1.1.0",
+    "commit": "9dfb55e1caa7e09e9f66ac9835ace08835e8443f"
+  },
+  "openxrSdkSource": {
+    "repository": "https://github.com/KhronosGroup/OpenXR-SDK-Source",
+    "version": "1.1.65",
+    "commit": "a9f14c416e383d05c142f5a2539a91fe3931b52a"
+  },
+  "build": {"architecture": "Windows-x64", "cppStandard": "C++17", "shaderModel": "5.0", "powershell": "5.1", "node": ">=18"}
+}

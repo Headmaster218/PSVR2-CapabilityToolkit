@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "hardwareOwner": "Sony driver + PSVR2Toolkit",
+  "runtimeReady": null,
+  "physicalHdrVerified": false,
+  "capabilities": {
+    "gazeSenseCapiBridge": {"implementation": "implemented", "verification": "offline-tested", "historicalIntegrationUserTested": true, "repositoryHardwareRetested": false},
+    "eyeCalibration": {"implementation": "external-tool", "provider": "PSVR2Toolkit.UnitySetup", "repositoryHardwareRetested": false},
+    "openxrProbe": {"implementation": "experimental", "verification": "offline-tested", "liveRuntimeQueriedInThisRepository": false},
+    "nativeHdr": {"implementation": "experimental", "verification": "compile-and-cpu-only", "gpuExecuted": false, "physicalHdrVerified": false},
+    "sdrEnhancement": {"implementation": "experimental", "verification": "compile-and-cpu-only", "outputMeaning": "linear-bt709-relative-white", "nativeHdrRoute": "bypass", "gpuExecuted": false},
+    "cameraCoefficientPatch": {"implementation": "proposed-patch", "verification": "cpu-reproduction", "applied": false, "comfortFixVerified": false},
+    "bareHandTracking": {"implementation": "not-implemented", "verification": "none"},
+    "rawEyeCamera": {"implementation": "not-implemented", "verification": "none", "firmware7AccessVerified": false}
+  }
+}
